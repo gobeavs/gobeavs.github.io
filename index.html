@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+  <fieldset>
+    <legend>Name:</legend>
+    <label>Given(First) Name:
+      <input type="text" name="first_name" size="30" maxlength="100">
+    </label>
+    <br />
+    <label>Family(Last) Name:
+      <input type="text" name="last_name" size="30" maxlength="100">
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Details:</legend>
+    <p>Gender:
+      <br>
+      <!-- Radio buttons, only one can be selected.-->
+      <label>
+        <input type="radio" name="gender" value="Female" />Female</label>
+      <label>
+        <input type="radio" name="gender" value="Male" />Male</label>
+      <label>
+        <input type="radio" name="gender" value="Other" />Other</label>
+    </p>Ethnicity (check all that apply):
+    <br>
+    <label>
+      <input type="checkbox" name="ethnicity" value="Asian"> Asian
+      <br>
+      <input type="checkbox" name="ethnicity" value="Polynesian"> Polynesian
+      <br>
+      <input type="checkbox" name="ethnicity" value="Native American"> Native American
+      <br>
+      <input type="checkbox" name="ethnicity" value="African"> African
+      <br>
+      <input type="checkbox" name="ethnicity" value="European"> European
+      <br>
+      <input type="checkbox" name="ethnicity" value="Middle Eastern"> Middle Eastern
+      <br>
+    </label>
+  </fieldset>
+  <p>
+    <label for="comments">Comments:</label>
+    <br />
+    <textarea rows="4" cols="40" id="comments"></textarea>
+  </p>
+  <input type="submit" value="Submit form" />
+</form>
+</body>
+</html>
